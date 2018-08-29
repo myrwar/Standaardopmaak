@@ -1,0 +1,55 @@
+<title>Vragen Beantwoorden </title>
+
+   
+<div class id="wrap">
+
+<h1 style="color:white"><img src="http://www.qien.nl/wp-content/uploads/2017/10/logo.svg" alt="Logo" height="100" width="100">
+<span> Welkom: </span>{{globalservice.gebruiker.gebruikersnaam}}</h1></div>
+
+    
+
+
+<div class id="sidebar">
+<h3 style="color: white">Menu</h3>
+<nav>
+        <a routerLink="/DashTrainee/NAWgegevens" routerLinkActive="active">NAW gegevens</a><br>
+        <a routerLink="/DashTrainee/database" routerLinkActive="active">Mijn persoonlijke gegevens</a><br>
+        <a routerLink="/DashTrainee/vragen" routerLinkActive="active">Vragen beantwoorden</a><br>
+        <a routerLink="/admin" routerLinkActive="active">Voortgang bekijken</a><br>
+        <a routerLink="/login" routerLinkActive="active">Afmelden</a><br>
+      </nav>
+<router-outlet></router-outlet>
+<!-- <router-outlet name="popup"></router-outlet> -->
+</div>
+
+
+
+
+<div class id="main">
+    
+        <h3> Vragen beantwoorden</h3>
+    <img src="https://media.istockphoto.com/photos/software-engineer-picture-id519161592?k=6&amp;m=519161592&amp;s=612x612&amp;w=0&amp;h=xjkplQQxI3MdP3ASlbn1tEBn1UnwmS1gdIbBJAuGSjc=" 
+        alt="Coding" style="width:300;height:200px;">
+
+  <!-- <form #VraagForm="ngForm"> -->
+    <div class="form">
+
+      <button type="submit" class="btn" (click)="onClickvraag($event)"> Vraag 1</button>
+      
+      
+      {{vraag.openVraag}}
+      <br><textarea name="openVraag" cols="50" rows="6" class="form-control" id="name" required (keyup) = "onKey2($event)"></textarea> 
+
+      <br><button type="submit" class="btn" (click)="onClickantwoord($event)">Verstuur antwoord</button>
+      
+    
+
+      
+        
+
+    </div>
+  <!-- </form> -->
+</div>
+
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="DeStijl.css">
