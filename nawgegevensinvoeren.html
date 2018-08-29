@@ -1,0 +1,67 @@
+<title>Trainee Pagina </title>
+
+   
+<div class id="wrap">
+
+<h1 style="color:white"><img src="http://www.qien.nl/wp-content/uploads/2017/10/logo.svg" alt="Logo" height="100" width="100">
+<span> Welkom: </span>{{globalservice.gebruiker.gebruikersnaam}}</h1></div>
+
+    
+
+
+<div class id="sidebar">
+<h3 style="color: white">Menu</h3>
+<nav>
+        <a routerLink="/DashTrainee/NAWgegevens" routerLinkActive="active">NAW gegevens</a><br>
+        <a routerLink="/DashTrainee/database" routerLinkActive="active">Mijn persoonlijke gegevens</a><br>
+        <a routerLink="/DashTrainee/vragen" routerLinkActive="active">Vragen beantwoorden</a><br>
+        <a routerLink="/admin" routerLinkActive="active">Voortgang bekijken</a><br>
+        <a routerLink="/login" routerLinkActive="active">Afmelden</a><br>
+      </nav>
+<router-outlet></router-outlet>
+<!-- <router-outlet name="popup"></router-outlet> -->
+</div>
+
+
+
+
+<div class id="main">
+  <form #VraagForm="ngForm">
+    <div class="form">
+      <br><br>
+      Vul hieronder je persoonlijke gegevens in:
+      <br>
+
+        <br>Voornaam:<br>
+        <input type="text" class="form-control"id="name" required   name="Voornaam" (keyup) = "onKey($event)"><br>
+
+        <br>Achternaam:<br>
+        <input type="text" class="form-control"id="name" required   name="Achternaam" (keyup) = "onKey2($event)"><br>
+        
+        <br>Gebruikersnaam:<br>
+        <input type="text" class="form-control"id="name" required   name="Achternaam" (keyup) = "onKey3($event)"><br>
+        
+        <br>Wachtwoord:<br>
+        <input type="text" class="form-control"id="name" required   name="Achternaam" (keyup) = "onKey4($event)"><br>
+        
+        <br>Emailadres:<br>
+        <input type="text" class="form-control"id="name" required   name="Achternaam" (keyup) = "onKey5($event)"><br>
+       
+        <br>Geboortedatum (vul in JJJJ-MM-DD):<br>
+        <input type="text" class="form-control"id="name" required   name="Achternaam" (keyup) = "onKey6($event)"><br> 
+       
+        <br>Woonplaats:<br>
+        <input type="text" class="form-control"id="name" required   name="Achternaam" (keyup) = "onKey7($event)"><br> 
+       
+        <br>Studiegroep:<br>
+        <input type="text" class="form-control"id="name" required   name="Achternaam" (keyup) = "onKey8($event)"><br> 
+  
+        
+
+        <br><button type="submit" class="button" (click)="onClickNaw($event)"> Sla je gegevens op</button>
+    </div>
+  </form>
+</div>
+
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="DeStijl.css">
