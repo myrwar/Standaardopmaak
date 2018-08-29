@@ -1,0 +1,88 @@
+
+
+#wrap {
+    background-color:#640080;
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#main {
+    text-align: center;
+    float: right;
+    width:85%;
+    background:white;
+    font-family: 'Titillium Web', sans-serif;
+    }
+
+    #main, input[text] {
+        color: black;
+        font-family: 'Titillium Web', sans-serif;
+      }
+
+
+#sidebar {
+    float:left;
+    width:15%;
+    height:100%;
+    
+    background: #640080;
+    font-family: 'Titillium Web', sans-serif;
+}
+    #sidebar, input[text]{
+      color: white;
+      font-family: 'Titillium Web', sans-serif;
+  }
+
+  table {
+      float:centre;
+  }
+
+  a {
+    cursor: pointer;
+    cursor: hand;
+    color: white;
+  }
+
+  button {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #eee;
+    border: yes;
+    border-radius: 2px;
+    padding: 10px 10px;
+    cursor: pointer;
+    cursor: hand;
+  }
+  button:hover {
+    background-color: #aaa
+  }
+  button:disabled {
+    background-color: #640080;
+    color: rgb(196, 166, 195);
+    cursor: auto;
+  }
+  
+  /* Navigation link styles */
+  nav a {
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-top: 5px;
+    display: inline-block;
+    background-color:#640080;
+    border-radius: 2px;
+  }
+  nav a:link {
+    color: white;
+  }
+  nav a:hover {
+    color: black;
+    background-color: #640080;
+  }
+  nav a.active {
+    color: black;
+  }
+
+  .vraagwijzigbutton 
+{ width: 50px; height: 10px; }
