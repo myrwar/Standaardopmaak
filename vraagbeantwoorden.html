@@ -34,10 +34,10 @@
   <!-- <form #VraagForm="ngForm"> -->
     <div class="form">
 
-      <button type="submit" class="btn" (click)="onClickvraag($event)"> Vraag 1</button>
       
       
-      {{vraag.openVraag}}
+      
+      <h4>Vraag 1: </h4>{{vraag.openVraag}}
       <br><textarea name="openVraag" cols="50" rows="6" class="form-control" id="name" required (keyup) = "onKey2($event)"></textarea> 
 
       <br><button type="submit" class="btn" (click)="onClickantwoord($event)">Verstuur antwoord</button>
